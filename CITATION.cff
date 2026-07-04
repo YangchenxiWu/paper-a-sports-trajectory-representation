@@ -7,7 +7,7 @@ authors:
     given-names: "Yangchenxi"
 repository-code: "https://github.com/YangchenxiWu/paper-a-sports-trajectory-representation"
 url: "https://github.com/YangchenxiWu/paper-a-sports-trajectory-representation"
-version: "v0.10.2-public-safe"
+version: "v0.10.3-public-safe"
 date-released: "2026-07-04"
 license: "CC-BY-4.0"
 abstract: "Public-safe companion repository for a conservative sports engineering manuscript on deterministic representation packets for sports trajectories under explicit coordinate, threshold, tolerance, score, and staged sensitivity assumptions. The repository includes manuscript drafts, claim-boundary documents, public-safe figure and table views, and staged sensitivity summaries. Trajectory-derived artifacts and private implementation materials are intentionally withheld."
