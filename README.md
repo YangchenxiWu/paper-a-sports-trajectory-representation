@@ -10,7 +10,7 @@ The repository contains manuscript drafts, claim-boundary documents, staged sens
 
 - `manuscript/`: current manuscript draft and manuscript-support files.
 - `evidence/`: claim ledger, limitations, candidate/tolerance doctrine, and staged sensitivity evidence summary.
-- `tables/robustness_summary.csv`: public-safe staged sensitivity aggregation.
+- `tables/robustness_summary.csv`: public-safe staged sensitivity aggregation with private planning details removed.
 - `DATA_ACCESS.md`: explanation of withheld trajectory-derived artifacts.
 
 ## What Is Not Included
@@ -46,4 +46,4 @@ The current public-safe manuscript draft is:
 
 - `manuscript/PAPER_A_DRAFT_v0.10.md`
 
-The public copy replaces trajectory-revealing figure assets and coordinate/location details with restricted-asset notes. The private working packet retains the full generated artifacts for internal audit.
+The public copy replaces trajectory-revealing figure assets and coordinate/location details with restricted-asset notes. The private working packet retains the full generated artifacts for internal review.

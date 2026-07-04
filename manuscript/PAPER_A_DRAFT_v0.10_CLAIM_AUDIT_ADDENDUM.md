@@ -32,7 +32,7 @@ The v0.10 changes do not claim:
 - device-level validity;
 - athlete, session, or device generalization;
 - universal CRS enforcement;
-- unified perturbation framework;
+- unified validation benchmark;
 - production readiness.
 
 ## Conclusion

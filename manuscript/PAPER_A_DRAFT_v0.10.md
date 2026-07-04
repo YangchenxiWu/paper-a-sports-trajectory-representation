@@ -30,7 +30,7 @@ For example, a stop or high-curvature candidate can be difficult to interpret if
 
 This paper asks whether sports trajectory observations can be converted into a reproducible and inspectable representation packet under fixed assumptions. Candidate terminology is used throughout: primitive outputs are threshold-conditioned primitive candidates, and topology outputs are tolerance-conditioned topology candidates. A candidate indicates that a deterministic extractor fired under recorded assumptions. It does not indicate physical truth, external correctness, or a ground reference.
 
-Existing staged sensitivity evidence is used to bound interpretation. Prior probes characterize how sampling density, gap handling, smoothing, curvature estimation, primitive thresholds, and topology tolerance affect generated artifacts. These probes support sensitivity and limitation claims, not robust validation or a unified perturbation benchmark.
+Existing staged sensitivity evidence is used to bound interpretation. Prior probes characterize how sampling density, gap handling, smoothing, curvature estimation, primitive thresholds, and topology tolerance affect generated artifacts. These probes support sensitivity and limitation claims, not robust validation or a unified validation benchmark.
 
 The contribution is a conservative representation paper for sports trajectories: a packet-level coordinate contract, threshold-conditioned and tolerance-conditioned candidate semantics, a generated two-sample artifact set, explicit deterministic heuristic score semantics, and staged sensitivity boundaries.
 
@@ -97,7 +97,7 @@ Primitive extraction produced threshold-conditioned primitive candidates from de
 
 The packet used a stop speed threshold of 1.5 m/s, stop minimum duration of 2.0 s, turn-angle threshold of 0.5236 rad (pi/6, 30 degrees), curvature threshold of 0.1 rad/m, and reversal-angle threshold of 2.0944 rad (2pi/3, 120 degrees). Overlap candidates used a 5.0 m distance threshold and 10.0 m minimum length. These values are reported as configured parameters, not as optimized or externally supported thresholds.
 
-Each primitive candidate retained source index bounds, parameter snapshots, evidence fields, and a deterministic heuristic score. Packet metadata explicitly states that this score is not a calibrated probability, not perturbation survival, and not comparable statistical confidence across candidate types unless future evidence supports such use.
+Each primitive candidate retained source index bounds, parameter snapshots, evidence fields, and a deterministic heuristic score. Packet metadata explicitly states that this score is not a calibrated probability, not artifact-survival evidence, and not comparable statistical confidence across candidate types unless separately supported.
 
 ### 2.6 Topology Candidate Extraction
 
@@ -185,9 +185,9 @@ flowchart LR
     G --> H["Staged sensitivity evidence<br/>not unified validation"]
 ```
 
-Caption: Staged sensitivity axes used to bound interpretation of the representation packet. Existing probes characterize sampling density, gap handling, smoothing, curvature estimation, primitive threshold sensitivity, and topology tolerance behavior. This is not a unified perturbation benchmark, robust validation, or proof of correct candidate detection.
+Caption: Staged sensitivity axes used to bound interpretation of the representation packet. Existing probes characterize sampling density, gap handling, smoothing, curvature estimation, primitive threshold sensitivity, and topology tolerance behavior. This is not a unified validation benchmark, robust validation, or proof of correct candidate detection.
 
-This evidence is boundary evidence. It identifies where generated artifacts persist, shift, appear, or disappear under controlled changes. It does not establish robust detection or a unified perturbation-based stability metric.
+This evidence is boundary evidence. It identifies where generated artifacts persist, shift, appear, or disappear under controlled changes. It does not establish robust detection or a unified stability metric.
 
 ## 4. Discussion
 
@@ -201,11 +201,11 @@ The staged sensitivity evidence also gives the packet a practical role. It shows
 
 The running sample illustrates a key interpretation risk. Its large topology candidate count reflects tolerance-conditioned pairwise geometry, dense repeated trajectory structure, and candidate representation rules. It should not be interpreted as a count of unique crossings or as a direct measure of real trajectory complexity.
 
-The packet deliberately stops before sport-specific semantics. A geometric stop candidate is not a confirmed tactical stop, a turn candidate is not a sport-defined maneuver, and a topology candidate is not an externally confirmed movement structure. Paper A treats these as auditable intermediate representations that could support later domain-specific studies, not as completed sport-performance interpretations.
+The packet deliberately stops before sport-specific semantics. A geometric stop candidate is not a confirmed tactical stop, a turn candidate is not a sport-defined maneuver, and a topology candidate is not an externally confirmed movement structure. Paper A treats these as auditable intermediate representations, not as completed sport-performance interpretations.
 
-In a practical workflow, the packet could sit between raw trajectory cleaning and downstream sport-specific interpretation. Analysts could first inspect whether candidate artifacts were generated under declared coordinate, threshold, tolerance, and score assumptions, and only then decide whether a subset of candidates should be carried into sport-specific coding, validation, coaching analysis, audit, or measurement study. In this sense, the packet is not the final analysis layer; it is an assumption-explicit representation layer that can make later analysis more inspectable.
+In a practical workflow, the packet could sit between raw trajectory cleaning and downstream domain-specific interpretation. Analysts could first inspect whether candidate artifacts were generated under declared coordinate, threshold, tolerance, and score assumptions, and only then decide whether a subset of candidates should be carried into a separate private analysis. In this sense, the packet is not the final analysis layer; it is an assumption-explicit representation layer that can make later analysis more inspectable.
 
-The packet also clarifies what remains outside Paper A. Universal CRS enforcement, canonical resampling, perturbation-based confidence, topology persistence metrics, external accuracy assessment, production deployment, and blind audit evaluation remain unsupported by the present manuscript.
+The packet also clarifies what remains outside Paper A. Universal CRS enforcement, canonical resampling, perturbation-based confidence, topology persistence metrics, external accuracy assessment, and production deployment remain unsupported by the present manuscript.
 
 Paper A should therefore be read as an assumption-explicit representation contribution. It demonstrates that configured sports trajectory samples can be converted into inspectable deterministic artifacts with recorded coordinate, threshold, tolerance, score, and sensitivity assumptions. It does not validate movement structures, provide sport-specific interpretation, or establish production deployment readiness.
 
@@ -219,13 +219,13 @@ Confidence values are deterministic heuristic scores. They summarize implementat
 
 Topology candidates are tolerance-conditioned. Endpoint-sensitive, overlap-sensitive, and near-threshold structures can appear, disappear, or shift under coordinate perturbation or tolerance changes. The current computational predicate tolerance is not a sensor-error tolerance. The computational-geometry references used in the Methods section provide background; the current implementation does not claim exact arithmetic, a sweep-line intersection algorithm, or a robust geometry kernel.
 
-The study does not include a unified perturbation framework. Individual staged probes support sensitivity discussion, but they do not provide artifact-level survival rates, cross-experiment matching rules, or graph persistence metrics.
+The study does not include a unified validation benchmark. Individual staged probes support sensitivity discussion, but they do not provide artifact-level survival rates, cross-experiment matching rules, or graph persistence metrics.
 
 The study does not bridge geometric candidates to sport-specific constructs. The primitive vocabulary is intentionally geometric and sport-agnostic. It does not identify sport-defined maneuvers, technical phases, performance outcomes, injury-risk markers, or coaching categories.
 
 The study is demonstrated on two sports trajectory samples. It does not test multiple athletes within a sport, repeated sessions for the same athlete, device-to-device agreement, or generalization across recording conditions. Device model, nominal sampling frequency, duplicate-row cause, and sensor-specific accuracy metadata were not available in the packet metadata.
 
-The study also does not include total-station reference comparison, GNSS error characterization, blind LLM audit, or external assessment of candidate correctness. These topics are future work and should not be interpreted as Methods or Results claims in Paper A.
+The study also does not include external assessment of candidate correctness. External assessment is outside the Methods and Results claims in Paper A.
 
 ## 6. Conclusion
 

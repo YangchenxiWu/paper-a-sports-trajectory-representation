@@ -1,53 +1,47 @@
 # Candidate and Tolerance Doctrine
 
-This packet uses deterministic code to produce inspectable representation
-artifacts. It does not validate physical truth.
+This public-safe doctrine defines Paper A terminology.
 
-## Primitive Candidates
+## Candidate
 
-Primitive outputs are threshold-conditioned candidates. A
-`stop_candidate`, `turn_candidate`, `left_turn_candidate`,
-`right_turn_candidate`, `high_curvature_segment`, or
-`direction_reversal_candidate` means that the deterministic extractor fired
-under the recorded descriptor method and threshold parameters.
+A candidate is a deterministic artifact emitted by a configured extractor under recorded assumptions.
 
-Primitive candidates are not ground-truth movement events, coaching labels, or
-validated sport semantics.
+A candidate is not:
 
-## Topology Candidates
+- a confirmed movement structure;
+- a sport-specific semantic label;
+- an external reference label;
+- a coaching or performance conclusion.
 
-Topology outputs are tolerance-conditioned candidates. A
-`self_intersection_candidate`, `loop_candidate`, or
-`repeated_path_candidate` means that the deterministic extractor fired under
-the recorded coordinate contract and tolerance parameters.
+## Threshold-Conditioned Primitive Candidate
 
-The topology tolerance is an observation parameter. It is not a ground-truth
-boundary and must not be interpreted as a physical statement about the real
-trajectory.
+Primitive candidates are generated under explicit thresholds such as speed, duration, angle, curvature, reversal angle, and overlap parameters.
 
-## Confidence Scores
+The safe wording is:
 
-Confidence scores in this packet are deterministic heuristic scores. They are
-derived from local evidence such as threshold margins, local consistency,
-duration, length, endpoint position, or segment separation depending on the
-extractor.
+> threshold-conditioned primitive candidate
 
-They are not calibrated probabilities, not perturbation survival rates, and not
-comparable as statistical confidence across primitive or topology types.
+## Tolerance-Conditioned Topology Candidate
 
-## Paper A Boundary
+Topology candidates are generated under a recorded computational tolerance.
 
-Paper A demonstrates artifact generation under documented coordinate,
-threshold, and tolerance assumptions. It does not provide external validation.
+The safe wording is:
 
-The packet must not claim:
+> tolerance-conditioned topology candidate
 
-- total-station validation;
-- GNSS error characterization;
-- blind LLM audit validation;
-- robust detection;
-- motion recovery;
-- autonomous sports AI;
-- ground-truth event validation.
+Topology candidate counts are emitted representations. They should not be read as counts of unique physical crossings.
 
-Total-station validation and blind audit remain future work outside Paper A.
+## Deterministic Heuristic Score
+
+The public manuscript describes score fields as deterministic heuristic scores.
+
+They are not:
+
+- calibrated probabilities;
+- external confidence estimates;
+- artifact-survival rates;
+- comparable statistical confidence values across candidate types.
+
+## Public Boundary
+
+This doctrine supports the public manuscript's claim discipline. It does not expose private trajectory artifacts or private planning details.
