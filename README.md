@@ -13,6 +13,9 @@ The repository contains manuscript drafts, claim-boundary documents, staged sens
 - `FIGURES_AND_TABLES.md`: public-safe index of GitHub-rendered figure and table views.
 - `figures/`: standalone public-safe figure views and restricted-asset notes.
 - `tables/`: standalone public-safe rendered tables plus staged sensitivity CSV.
+- `CITATION.cff`: citation metadata for GitHub's repository citation panel.
+- `LICENSE.md`: public licensing terms and excluded private material boundary.
+- `RELEASE_NOTES_v0.10-public-safe.md`: release summary and DOI status note.
 - `DATA_ACCESS.md`: explanation of withheld trajectory-derived artifacts.
 
 ## What Is Not Included
@@ -49,3 +52,9 @@ The current public-safe manuscript draft is:
 - `manuscript/PAPER_A_DRAFT_v0.10.md`
 
 The public copy replaces trajectory-revealing figure assets and coordinate/location details with restricted-asset notes. The private working packet retains the full generated artifacts for internal review.
+
+## Citation and License
+
+Please use `CITATION.cff` when citing this public companion repository. A DOI can be added after a DOI-backed archived release is created.
+
+Public manuscript, figure, table, and documentation materials are licensed under CC BY 4.0. Any code snippets or scripts later added to this public repository are licensed under MIT unless a file states otherwise. Private trajectory-derived artifacts and private implementation materials are not distributed or licensed by this repository.

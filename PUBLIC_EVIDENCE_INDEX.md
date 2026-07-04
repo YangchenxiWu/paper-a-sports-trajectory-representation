@@ -16,6 +16,9 @@ This repository is intentionally public-safe. It maximizes public review of Pape
 | `tables/table1_representation_summary.md` | Public rendered representation summary table. |
 | `tables/table2_provenance_score_tolerance_semantics.md` | Public rendered provenance, score, and tolerance semantics table. |
 | `tables/table3_staged_sensitivity_summary.md` | Public rendered staged sensitivity summary table. |
+| `CITATION.cff` | Citation metadata for this public companion repository. |
+| `LICENSE.md` | Public license terms and excluded-material boundary. |
+| `RELEASE_NOTES_v0.10-public-safe.md` | Public release summary and DOI status note. |
 | `evidence/CLAIMS_LEDGER.md` | Public claim boundaries. |
 | `evidence/LIMITATIONS.md` | Public limitations without private planning details. |
 | `evidence/CANDIDATE_AND_TOLERANCE_DOCTRINE.md` | Candidate, tolerance, and score terminology. |
