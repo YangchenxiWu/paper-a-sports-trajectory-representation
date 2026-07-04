@@ -10,7 +10,9 @@ The repository contains manuscript drafts, claim-boundary documents, staged sens
 
 - `manuscript/`: current manuscript draft and manuscript-support files.
 - `evidence/`: claim ledger, limitations, candidate/tolerance doctrine, and staged sensitivity evidence summary.
-- `tables/robustness_summary.csv`: public-safe staged sensitivity aggregation with private planning details removed.
+- `FIGURES_AND_TABLES.md`: public-safe index of GitHub-rendered figure and table views.
+- `figures/`: standalone public-safe figure views and restricted-asset notes.
+- `tables/`: standalone public-safe rendered tables plus staged sensitivity CSV.
 - `DATA_ACCESS.md`: explanation of withheld trajectory-derived artifacts.
 
 ## What Is Not Included
