@@ -30,4 +30,7 @@ It does not support claims of external measurement accuracy, robust detection, s
 
 ## DOI Status
 
-This release is intended to trigger Zenodo archiving after the GitHub release webhook was confirmed active. Once Zenodo assigns a DOI, the DOI should be added to `CITATION.cff` and the repository README.
+This release was archived by Zenodo.
+
+- Version DOI: `10.5281/zenodo.21193034`
+- Concept DOI: `10.5281/zenodo.21192883`

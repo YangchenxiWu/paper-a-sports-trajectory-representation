@@ -1,13 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this public companion repository, please cite it using the metadata below."
-type: dataset
+type: software
 title: "Paper A Sports Trajectory Representation: Public-Safe Companion Repository"
 authors:
   - family-names: "Wu"
     given-names: "Yangchenxi"
+doi: "10.5281/zenodo.21193034"
 repository-code: "https://github.com/YangchenxiWu/paper-a-sports-trajectory-representation"
 url: "https://github.com/YangchenxiWu/paper-a-sports-trajectory-representation"
 version: "v0.10.3-public-safe"
 date-released: "2026-07-04"
 license: "CC-BY-4.0"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21192883"
+    description: "Zenodo concept DOI for all versions of this public companion repository."
 abstract: "Public-safe companion repository for a conservative sports engineering manuscript on deterministic representation packets for sports trajectories under explicit coordinate, threshold, tolerance, score, and staged sensitivity assumptions. The repository includes manuscript drafts, claim-boundary documents, public-safe figure and table views, and staged sensitivity summaries. Trajectory-derived artifacts and private implementation materials are intentionally withheld."

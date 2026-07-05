@@ -1,5 +1,7 @@
 # Paper A Sports Trajectory Representation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21193034.svg)](https://doi.org/10.5281/zenodo.21193034)
+
 This is a public-safe companion repository for Paper A:
 
 > A Deterministic Spatial Representation Packet for Sports Trajectories Under Explicit Coordinate, Threshold, and Tolerance Assumptions
@@ -55,6 +57,6 @@ The public copy replaces trajectory-revealing figure assets and coordinate/locat
 
 ## Citation and License
 
-Please use `CITATION.cff` when citing this public companion repository. A DOI can be added after a DOI-backed archived release is created.
+Please use `CITATION.cff` when citing this public companion repository. The archived version DOI is `10.5281/zenodo.21193034`; the Zenodo concept DOI for all versions is `10.5281/zenodo.21192883`.
 
 Public manuscript, figure, table, and documentation materials are licensed under CC BY 4.0. Any code snippets or scripts later added to this public repository are licensed under MIT unless a file states otherwise. Private trajectory-derived artifacts and private implementation materials are not distributed or licensed by this repository.
