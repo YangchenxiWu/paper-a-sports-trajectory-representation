@@ -1,23 +1,37 @@
-# Paper A Sports Trajectory Representation
+# Representation Packet Technical Report
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21193034.svg)](https://doi.org/10.5281/zenodo.21193034)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21340626.svg)](https://doi.org/10.5281/zenodo.21340626)
 
-This is a public-safe companion repository for Paper A:
+This public-safe companion repository contains the **Representation Packet
+Technical Report v1.0.0**, released as a **Preprint / Technical Report** on
+2026-07-13. It is **not peer reviewed**.
 
-> A Deterministic Spatial Representation Packet for Sports Trajectories Under Explicit Coordinate, Threshold, and Tolerance Assumptions
+The report documents a deterministic representation layer for finite, noisy
+sports trajectories under explicit coordinate, threshold, tolerance, score,
+and staged sensitivity assumptions. It documents representation and
+interpretation boundaries; it does not present application-specific validation.
 
-The repository contains manuscript drafts, claim-boundary documents, staged sensitivity summaries, and literature notes for a conservative sports-engineering representation paper.
+## Release identity
+
+- Release branch: `codex/representation-packet-technical-report-v1.0.0`
+- Git tag: `representation-packet-technical-report-v1.0.0`
+- Version DOI: `10.5281/zenodo.21340626`
+- Zenodo concept DOI: `10.5281/zenodo.21192883`
+- Historical public version: `v0.10.3-public-safe`
+- Historical version DOI: `10.5281/zenodo.21193034`
 
 ## What This Repository Contains
 
-- `manuscript/`: current manuscript draft and manuscript-support files.
-- `evidence/`: claim ledger, limitations, candidate/tolerance doctrine, and staged sensitivity evidence summary.
-- `FIGURES_AND_TABLES.md`: public-safe index of GitHub-rendered figure and table views.
+- `manuscript/`: the technical-report manuscript and historical public-safe
+  manuscript-support files.
+- `evidence/`: claim ledger, limitations, candidate/tolerance doctrine, and
+  staged sensitivity evidence summary.
+- `FIGURES_AND_TABLES.md`: public-safe index of figure and table views.
 - `figures/`: standalone public-safe figure views and restricted-asset notes.
-- `tables/`: standalone public-safe rendered tables plus staged sensitivity CSV.
-- `CITATION.cff`: citation metadata for GitHub's repository citation panel.
-- `LICENSE.md`: public licensing terms and excluded private material boundary.
-- `RELEASE_NOTES_v0.10-public-safe.md`: release summary and DOI status note.
+- `tables/`: standalone public-safe rendered tables plus staged sensitivity
+  CSV.
+- `CITATION.cff`: citation metadata for the current release.
+- `RELEASE_NOTES_v1.0.0-technical-report.md`: current release summary.
 - `DATA_ACCESS.md`: explanation of withheld trajectory-derived artifacts.
 
 ## What Is Not Included
@@ -29,14 +43,17 @@ This public-safe repository intentionally does **not** include:
 - descriptor tables;
 - primitive/topology/graph JSON artifacts;
 - overlay HTML/PNG artifacts;
-- coordinate-provenance JSON files;
+- projection origins or location-resolving provenance;
 - private source-code modules from the local `sports-spatial-core` repository.
 
-Those artifacts are retained locally because they can reveal trajectory geometry, source-data layout, or location-derived information.
+Those materials remain private because they can reveal trajectory geometry,
+source-data layout, or location-derived information.
 
 ## Claim Boundary
 
-Paper A is a representation manuscript. It demonstrates assumption-explicit artifact generation under packet-level coordinate, threshold, tolerance, score, and staged sensitivity assumptions.
+The technical report is a representation contribution. It demonstrates
+assumption-explicit artifact generation under packet-level coordinate,
+threshold, tolerance, score, and staged sensitivity assumptions.
 
 It does not claim:
 
@@ -45,18 +62,21 @@ It does not claim:
 - sport-specific semantic interpretation;
 - calibrated probability confidence;
 - universal CRS enforcement;
-- production deployment readiness.
+- production deployment readiness;
+- application-specific validation.
 
-## Current Draft
+## Historical material
 
-The current public-safe manuscript draft is:
-
-- `manuscript/PAPER_A_DRAFT_v0.10.md`
-
-The public copy replaces trajectory-revealing figure assets and coordinate/location details with restricted-asset notes. The private working packet retains the full generated artifacts for internal review.
+The earlier public-safe manuscript draft remains available at
+`manuscript/PAPER_A_DRAFT_v0.10.md` as historical release material. The current
+technical report is
+`manuscript/REPRESENTATION_PACKET_TECHNICAL_REPORT_v1.0.0.md`.
 
 ## Citation and License
 
-Please use `CITATION.cff` when citing this public companion repository. The archived version DOI is `10.5281/zenodo.21193034`; the Zenodo concept DOI for all versions is `10.5281/zenodo.21192883`.
-
-Public manuscript, figure, table, and documentation materials are licensed under CC BY 4.0. Any code snippets or scripts later added to this public repository are licensed under MIT unless a file states otherwise. Private trajectory-derived artifacts and private implementation materials are not distributed or licensed by this repository.
+Please use `CITATION.cff` when citing this technical report. Public manuscript,
+figure, table, and documentation materials are licensed under CC BY 4.0. Any
+code snippets or scripts later added to this public repository are licensed
+under MIT unless a file states otherwise. Private trajectory-derived artifacts
+and private implementation materials are not distributed or licensed by this
+repository.
